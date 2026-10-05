@@ -1,0 +1,2 @@
+# This scorer is optional and changes the evaluation protocol relative to raw exact matching.
+math-verify[antlr4_13_2]>=0.7,<1

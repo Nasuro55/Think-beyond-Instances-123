@@ -1,0 +1,33 @@
+{
+  "description": "Optional extensions. Their accuracy gains must be established by held-out experiments.",
+  "model": {
+    "backend": "api",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "model_url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+    "base_url": "http://localhost:8000/v1",
+    "api_key_env": "MODEL_API_KEY",
+    "send_seed": true,
+    "json_mode": false,
+    "extra_body": {},
+    "cache_responses": true
+  },
+  "pipeline": {
+    "temperature": 0.6,
+    "mutation_temperature": 0.8,
+    "top_p": 0.95,
+    "max_tokens": 16384,
+    "candidate_count": 4,
+    "mutation_count": 2,
+    "mutation_attempts": 4,
+    "card_attempts": 4,
+    "json_repair_attempts": 2,
+    "chain_rollbacks": 1,
+    "answer_mode": "exact",
+    "numeric_checks": true,
+    "verify_consensus": true,
+    "verify_framework": true,
+    "framework_retries": 1,
+    "ablation": "full"
+  },
+  "seed": 42
+}

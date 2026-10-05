@@ -1,0 +1,50 @@
+{
+  "math500": {
+    "repo_id": "HuggingFaceH4/MATH-500",
+    "url": "https://huggingface.co/datasets/HuggingFaceH4/MATH-500",
+    "subset": "default", "split": "test",
+    "question_field": "problem", "answer_field": "answer", "id_field": "unique_id",
+    "local_path": "data/math500.jsonl", "recommended_repeats": 3,
+    "notes": "500 held-out math problems. Dataset revisions are resolved and recorded when downloading."
+  },
+  "minerva": {
+    "repo_id": "math-ai/minervamath",
+    "url": "https://huggingface.co/datasets/math-ai/minervamath",
+    "subset": "default", "split": "test",
+    "question_field": "question", "answer_field": "answer", "id_field": "id",
+    "local_path": "data/minerva.jsonl", "recommended_repeats": 3,
+    "notes": "Verify this hosted benchmark copy against the exact paper dataset before claiming reproduction."
+  },
+  "olympiad": {
+    "repo_id": "Hothan/OlympiadBench",
+    "url": "https://huggingface.co/datasets/Hothan/OlympiadBench",
+    "subset": "OE_TO_maths_en_COMP", "split": "train",
+    "question_field": "question", "answer_field": "final_answer", "id_field": "id",
+    "local_path": "data/olympiad.jsonl", "recommended_repeats": 3,
+    "notes": "English text-only open-ended competition math. The upstream evaluation questions are published under a split named train; this program performs inference only. The paper does not identify its exact subset. Multiple required answers are retained as a JSON list string."
+  },
+  "college": {
+    "repo_id": "realtreetune/college_math",
+    "url": "https://huggingface.co/datasets/realtreetune/college_math",
+    "subset": "default", "split": "test",
+    "question_field": "problem", "answer_field": "answer", "id_field": "id",
+    "local_path": "data/college.jsonl", "recommended_repeats": 3,
+    "notes": "Accessible College Math benchmark mirror; exact identity with the paper split has not been established. Replace with the paper's original JSONL for strict reproduction."
+  },
+  "amc23": {
+    "repo_id": "math-ai/amc23",
+    "url": "https://huggingface.co/datasets/math-ai/amc23",
+    "subset": "default", "split": "test",
+    "question_field": "question", "answer_field": "answer", "id_field": "id",
+    "local_path": "data/amc23.jsonl", "recommended_repeats": 32,
+    "notes": "40 questions; report avg@32, not majority-vote accuracy or pass@32."
+  },
+  "aime25": {
+    "repo_id": "math-ai/aime25",
+    "url": "https://huggingface.co/datasets/math-ai/aime25",
+    "subset": "default", "split": "test",
+    "question_field": "problem", "answer_field": "answer", "id_field": "id",
+    "local_path": "data/aime25.jsonl", "recommended_repeats": 32,
+    "notes": "30 questions; report avg@32, not majority-vote accuracy or pass@32."
+  }
+}

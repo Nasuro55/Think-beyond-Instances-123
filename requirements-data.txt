@@ -1,0 +1,2 @@
+datasets>=3.2,<6
+huggingface-hub>=0.28,<2

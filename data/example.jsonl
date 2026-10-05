@@ -1,0 +1,2 @@
+{"id":"paper_illustration","question":"Given real numbers x and y with x + y = 10 and x**3 + y**3 = 370, find x**2 + y**2.","answer":"58"}
+{"id":"linear_example","question":"If 3*x + 7 = 22, what is x?","answer":"5"}

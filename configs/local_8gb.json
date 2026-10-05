@@ -1,0 +1,31 @@
+{
+  "description": "Memory-conscious Qwen3-4B NF4 preset for an 8 GB CUDA GPU; quantization and reduced context differ from full-precision paper runs.",
+  "model": {
+    "backend": "transformers",
+    "model_id": "Qwen/Qwen3-4B",
+    "model_url": "https://huggingface.co/Qwen/Qwen3-4B",
+    "enable_thinking": true,
+    "load_in_4bit": true,
+    "device_map": "auto",
+    "dtype": "auto",
+    "input_token_limit": 5500,
+    "cache_dir": "cache/model",
+    "cache_responses": false
+  },
+  "pipeline": {
+    "temperature": 0.6,
+    "mutation_temperature": 0.8,
+    "top_p": 0.95,
+    "top_k": 20,
+    "max_tokens": 4096,
+    "candidate_count": 4,
+    "mutation_count": 1,
+    "chain_rollbacks": 1,
+    "parallel_experts": false,
+    "answer_mode": "exact",
+    "numeric_checks": true,
+    "verify_consensus": true,
+    "verify_framework": true
+  },
+  "seed": 42
+}

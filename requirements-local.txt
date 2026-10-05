@@ -1,0 +1,6 @@
+# Install a CUDA-compatible PyTorch build for your system before using the local GPU preset.
+torch>=2.5,<3
+transformers>=4.51,<5
+accelerate>=1.2,<2
+bitsandbytes>=0.45,<1
+safetensors>=0.4,<1

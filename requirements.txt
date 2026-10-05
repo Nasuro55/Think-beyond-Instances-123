@@ -1,0 +1,2 @@
+# The API backend, demo, unit tests, and JSONL evaluation use only Python's standard library.
+# Python 3.10 or newer is required. No third-party package is required for this file.

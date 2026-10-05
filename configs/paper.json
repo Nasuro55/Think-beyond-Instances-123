@@ -1,0 +1,32 @@
+{
+  "description": "Paper-aligned core method; JSON response serialization and finite retry budgets are implementation choices.",
+  "model": {
+    "backend": "api",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "model_url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+    "base_url": "http://localhost:8000/v1",
+    "api_key_env": "MODEL_API_KEY",
+    "send_seed": true,
+    "json_mode": false,
+    "extra_body": {},
+    "cache_responses": true
+  },
+  "pipeline": {
+    "temperature": 0.6,
+    "mutation_temperature": 0.8,
+    "top_p": 0.95,
+    "max_tokens": 8192,
+    "candidate_count": 4,
+    "mutation_count": 1,
+    "mutation_attempts": 3,
+    "card_attempts": 3,
+    "json_repair_attempts": 2,
+    "chain_rollbacks": 1,
+    "answer_mode": "exact",
+    "numeric_checks": false,
+    "verify_consensus": false,
+    "verify_framework": false,
+    "ablation": "full"
+  },
+  "seed": 42
+}
